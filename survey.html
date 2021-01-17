@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      color: white;
+    }
+    select {
+      font-family: "Poppins", sans-serif;
+    }
+    ::placeholder {
+      font-family: "Poppins", sans-serif;
+    }
+    button {
+      font-family: "Poppins", sans-serif;
+      color: white;
+    }
+    .box {
+      border-style: solid;
+      border-color: black;
+      border-width: 0px;
+      text-align: center;
+    }
+    .survey {
+      max-width: 55em;
+      text-align: left;
+      margin: auto;
+    }
+    .survey-name {
+      margin: 4em 0 0 0;
+    }
+    .survey-box{
+      width: 100%;
+      float: left;
+      border-radius: 5px;
+      height: 2.5em;
+      padding-left: 2%;
+    }
+    .survey-drop {
+      width: 100%;
+      float: left;
+      border-radius: 5px;
+      height: 2.5em;
+      padding-left: 2%;
+    }
+    .check-button {
+      margin: 10px 10px 15px 10px;
+    }
+    .text-box {
+      float: left;
+      width: 100%;
+      border-radius: 5px;
+      padding-bottom: 10%;
+    }
+    .inli {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    #box-one {
+      max-width: 60em;
+      height: auto;
+      margin: auto;
+      background-image: linear-gradient(rgba(100,0,255,0.8), rgba(100,0,255,0.8));
+    }
+    #box-two {
+      max-width: 60em;
+      height: auto;
+      margin: auto;
+      background-image: linear-gradient(rgba(100,0,255,0.8), rgba(100,0,255,0.8));
+    }
+    #box-title {
+      max-width: 50em;
+      height: auto;
+      margin: auto;
+      padding: 2em;
+    }
+    #title {
+      margin: 3em auto auto auto;
+    }
+    #description {
+      margin: 0em auto 2em auto;
+      font-style: italic;
+      padding: 2em;
+    }
+    #back-img {
+      background-image: linear-gradient(rgba(155,0,255,0.5), rgba(155,0,255,0.5)), url("https://www.thoughtco.com/thmb/6kMqBq6oflg91Hvhrtep7H5zXn8=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/people-studying-in-group-58d592455f9b584683378ff8.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      opacity: ;
+    }
+    #submit {
+      background-color: #4CAF50;
+      float: left;
+      width: 100.5%;
+      margin-top: 35px;
+      padding: 15px 32px;
+      text-align: center;
+      border-radius: 5px;
+      border-style: solid;
+      border-color: gray;
+      border-width: 2px;
+      font-size: 1.5em;
+    }
+    #submit:hover {
+      border-color: red;
+      scale: 1.01;
+    }
+  </style>
+  <body>
+    <div id="back-img">
+    <main>
+      <div class="box" id="box-one">
+        <div class="box" id="box-title">
+          <h1 id="title">
+            freeCodeCamp Survey Form
+          </h1>
+          <p id="description">
+            Thank you for taking the time to help us improve the platform 
+          </p>
+        </div>
+      </div>
+      <div class="box" id="box-two">
+        <form class="box survey" id="survey-form">
+          <div style="padding: 30px;">
+          </div>
+          <div class="survey-name">
+          </div>
+          <label id="name-label" for="name">Name</label>
+          <input class="survey-box" id="name" type="text" placeholder="Enter your name" name="name" required>
+          <div class="survey-name">
+          </div>
+          <label id="email-label" for="email">Email</label>
+          <input class="survey-box" id="email" type="email" placeholder="Enter your Email" name="email" required>
+          <div class="survey-name">
+          </div>
+          <label id="number-label" for="number">Age (optional)</label>
+          <input class="survey-box" id="number" type="number" placeholder="Age" name="number" min="0" max="200">
+          <div class="survey-name">
+          </div>
+          <label for="dropdown">Which option best describes your current role?</label>
+          <select class="survey-drop" id="dropdown" name="dropdown">
+            <option selected="true" disabled="disabled">Select a current role
+            </option>
+            <option>Student
+            </option>
+            <option>Full Time Job
+            </option>
+            <option>Full Time Learner
+            </option>
+            <option>Prefer not to say
+            </option>
+            <option>Other
+            </option>
+          </select>
+          <p class="survey-name">Which option best describes your current role?
+          </p>
+          <label class="check-text" for="definitely">
+          <input class="check-button" type="radio" name="checkboxes" value=definitely>Definitely</label><br>
+          <label class="check-text" for="maybe">
+          <input class="check-button" type="radio" name="checkboxes" value=maybe>Maybe</label><br>
+          <label class="check-text" for="not-sure">
+          <input class="check-button" type="radio" name="checkboxes" value=not-sure>Not Sure</label>
+          <div style="margin-top: 20px">
+          </div>
+          <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+          <select class="survey-drop" id="dropdown" name="dropdown">
+            <option selected="true" disabled="disabled">Select an option
+            </option>
+            <option>Challenges
+            </option>
+            <option>Projects
+            </option>
+            <option>Community
+            </option>
+            <option>Open Source
+            </option>
+          </select>
+          <div class="survey-name inli">
+            <p style="margin: -5px 0 -5px 0;">What would you like to see improved?
+            </p>
+            <p style="font-size: 0.7em">
+            (Check all that apply)
+            </p>
+          </div>
+          <label class="check-text" for="definitely">
+          <input class="check-button" type="checkbox" name="checkboxes" value="front-end">Front-end Projects</label><br>
+          <input class="check-button" type="checkbox" name="checkboxes" value="back-end">Back-end Projects</label><br>
+          <input class="check-button" type="checkbox" name="checkboxes" value="data-visualization">Data Visualization</label><br>
+          <input class="check-button" type="checkbox" name="checkboxes" value="challenges">Challenges</label><br>
+          <input class="check-button" type="checkbox" name="checkboxes" value="open-source-community">Open Source Community</label><br>
+          <input class="check-button" type="checkbox" name="checkboxes" value="gitter-help-room">Gitter Help Rooms</label><br>
+          <input class="check-button" type="checkbox" name="checkboxes" value="videos">Videos</label><br>
+          <input class="check-button" type="checkbox" name="checkboxes" value="city-meetups">City Meetups</label><br>
+          <input class="check-button" type="checkbox" name="checkboxes" value="wiki">Wiki</label><br>
+          <input class="check-button" type="checkbox" name="checkboxes" value="forum">Forum</label><br>
+           <input class="check-button" type="checkbox" name="checkboxes" value="additional-courses">Additional Courses</label><br>
+          <div style="margin-top: 20px">
+          </div>
+          <label for="text-box">Any comments or suggestions?</label><br>
+          <textarea type="text" name="text-box" class="text-box survey-drop">Enter your comment here...</textarea>
+          <div class="survey-name">
+          </div>
+          <label for="submit">
+          <button id="submit" name="submit">
+            Submit</button>
+          </label>
+          <div style="padding: 100px;">
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  .corpo {
+    font-size: 1.5em;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+    .margem1 {
+    background: LightGray;
+  }
+    .margem2 {
+    background: LightGray;
+  }
+    .conteudo {
+    background: LightGray;
+    display: grid;
+    grid-gap: 10px;
+  }
+    .cabecalho {
+    font-size: 1.5em;
+    background: LightGray;
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+  }
+#nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+    .recuo-cabecalho {
+    height: 2em;
+    background: LightGray;
+  }
+    .titulo {
+    text-align: center;
+  }
+    .email {
+    text-align: center;
+  }
+    .texto1 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+    .texto2 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+    .texto3 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+    .fig-texto1 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+    .fig-texto2  {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+    .fig-texto3  {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+    .fig-boxes{
+    height: 5em;
+  }
+    .youtube {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+    .precos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+    .rodape {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+    .cabecalho-logo {
+    background: LightGray;
+    align-self: center;
+  }
+    .cabecalho-logo-img {
+    max-width: 30%;
+    height: auto;
+  }
+    .cabecalho-texto1 {
+    align-self: center;
+    justify-self: center;
+  }
+    .cabecalho-texto2 {
+    align-self: center;
+    justify-self: center;
+  }
+    .cabecalho-texto3 {
+    align-self: center;
+    justify-self: center;
+  }
+    .precos-box1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+    .precos-box2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+    .precos-box3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+    .preco-subbox11 {
+     background: Gray;
+     text-align: center;
+  }
+    .preco-subbox12 {
+      text-align: center;
+  }
+    .preco-subbox13 {
+      text-align: center;
+  }
+    .preco-subbox14 {
+      text-align: center;
+  }
+.borda{
+  
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.rodape-box1 {
+  background: Gray;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 10fr 1fr 1fr 1fr;
+}
+.rodape-box2 {
+  background: Gray;
+  text-align: right;
+}
+.rodape-subbox11 {
+  background: Gray;
+}
+.rodape-subbox12 {
+  background: Gray;
+  text-align: center;
+}
+.rodape-subbox13 {
+  background: Gray;
+  text-align: center;
+}
+.rodape-subbox14 {
+  background: Gray;
+  text-align: center;
+}
+.nav-link {
+  color: Black;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.7em;
+}
+.select {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em 5em 1em 5em;
+  background: Yellow;
+}
+.select:hover {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 1em 5em 1em 5em;
+  background: Orange;
+}
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+h4 {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+h5 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+}
+h6 {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.7em;
+  margin: 0.7em;
+}
+h7 {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.7em;
+}
+h8 {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.6em;
+}
+.survey-box {
+      width: 50%;
+      float: center;
+      border-radius: 5px;
+      height: 2.5em;
+      font-family: Helvetica, sans- serif;
+      font-size: 0.6em;
+      margin: 10px;
+    }
+.survey-button {
+      font-family: Helvetica, sans- serif;
+      font-size: 1em;
+      background: Yellow;
+}
+#submit:hover{
+  background: Orange;
+}
+a {
+  text-decoration:none;
+  color: black;
+}
+@media (max-height: 15cm) {
+    .cabecalho-logo-img {
+    max-width: 50%;
+    height: auto;  
+}
+    .nav-link {
+  font-size: 0.5em;
+  }
+}
+</style>
+  <body>
+      <header class="cabecalho" id="header">
+        <div class="cabecalho-logo">
+          <img class="cabecalho-logo-img" id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png">
+        </div>
+        <nav id="nav-bar">
+          <div class="cabecalho-texto1"><a href="#features" class="nav-link">Features</a></div>
+          <div class="cabecalho-texto2"><a href="#video" class="nav-link">How It Works</a></div>
+          <div class="cabecalho-texto3"><a href="#pricing" class=" nav-link">Pricing</a></div>
+        </nav>
+      </header>
+      <div class="recuo-cabecalho"></div>
+      <div class="corpo">
+        <div class="margem1"></div>
+        <div class="conteudo">
+          <div class="titulo">
+            <h1>Handcrafted, home-made masterpieces</h1>
+          </div>
+          <div class="email">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <input class="survey-box" id="email" type="email" name="email" placeholder="Enter your email adress"></input></br>
+              <input class="survey-button borda" id="submit" type="submit" value="Get Started"></input>
+            </form>
+          </div>
+          <div class="texto1" id="features">
+            <div class="fig-texto1">
+              <img class="fig-boxes borda" src="https://i.pinimg.com/originals/2a/ec/b9/2aecb93a75d08bbebec5800b1cfa59a3.jpg"></div>
+            <div class="box-texto1">
+              <h2>Premium Materials</h2>
+              <h3>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</h3>
+            </div>
+          </div>
+          <div class="texto2">
+            <div class="fig-texto2">
+              <img class="fig-boxes borda" src="https://static.vecteezy.com/system/resources/previews/000/349/634/non_2x/vector-truck-icon.jpg"></div>
+            <div class="box-texto2">
+              <h2>Fast Shipping</h2>
+              <h3>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</h3>
+            </div>
+          </div>
+          <div class="texto3">
+            <div class="fig-texto3">
+              <img class="fig-boxes borda" src="https://res.cloudinary.com/teepublic/image/private/s--y9ZZ7nyO--/c_fit,g_north_west,h_378,w_840/co_000000,e_outline:40/co_000000,e_outline:inner_fill:1/co_ffffff,e_outline:40/co_ffffff,e_outline:inner_fill:1/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1572456977/production/designs/6526772_0.jpg"></div>
+            <div class="box-texto3">
+              <h2>Quality Assurance</h2>
+              <h3>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</h3>
+            </div>
+          </div>
+          <div class="youtube"><iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="precos" id="pricing">
+            <div class="precos-box1 borda">
+              <div class="preco-subbox11">
+                <h4>TENOR TROMBONE</h4>
+              </div>
+              <div class="preco-subbox12">
+                <h5>$600</h5>
+              </div>
+              <div class="preco-subbox13">
+                <h6>Lorem ipsum.</h6>
+                <h6>Lorem ipsum.</h6>
+                <h6>Lorem ipsum dolor.</h6>
+                <h6>Lorem ipsum.</h6>
+              </div>
+              <button class="preco-subbox14 select" type="button">SELECT</button>
+            </div>
+            <div class="precos-box2 borda">
+              <div class="preco-subbox11">
+                <h4>BASS TROMBONE</h4>
+              </div>
+              <div class="preco-subbox12">
+                <h5>$900</h5>
+              </div>
+              <div class="preco-subbox13">
+                <h6>Lorem ipsum.</h6>
+                <h6>Lorem ipsum.</h6>
+                <h6>Lorem ipsum dolor.</h6>
+                <h6>Lorem ipsum.</h6>
+              </div>
+              <button class="preco-subbox14 select" type="button">SELECT</button>
+            </div>
+            <div class="precos-box3 borda">
+              <div class="preco-subbox11">
+                <h4>VALVE TROMBONE</h4>
+              </div>
+              <div class="preco-subbox12">
+                <h5>$1200</h5>
+              </div>
+              <div class="preco-subbox13">
+                <h6>Plays similar to a Trumpet</h6>
+                <h6>Great for Jazz Bands</h6>
+                <h6>Lorem ipsum dolor.</h6>
+                <h6>Lorem ipsum.</h6>
+              </div>
+              <button class="preco-subbox14 select" type="button">SELECT</button>
+            </div>
+        </div>
+          <div class="rodape">
+            <div class="rodape-box1">
+              <div class="rodape-subbox11"></div>
+              <div class="rodape-subbox12">
+                <a href="#"><h7>Privacy</h7></a>
+              </div>
+              <div class="rodape-subbox13">
+                <a href="#"><h7>Terms</h7></a>
+              </div>
+              <div class="rodape-subbox14">
+                <a href="#"><h7>Contact</h7></a>
+              </div>
+            </div>
+            <div class="rodape-box2">
+              <h8><em>Copyright 2016, Original Trombones</em></h8>
+            </div>
+        </div>
+        </div>
+        <div class="margem2"></div>
+     </div>
+  </body>
+</html>
