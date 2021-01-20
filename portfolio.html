@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    li {
+  float: right;
+}
+ul {
+  top: 0;
+  width: 95vw;
+  text-align: center;
+}
+a{
+  display: block;
+  padding: 8px;
+  background-color: #ff9900;
+  text-decoration: none;
+  color: #1a1a00;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+a:hover{
+  background-color: #ccff33;
+}
+h1{
+  font-family: Helvetica, sans-serif;
+  font-size: 2em;
+}
+h2{
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3em
+}
+.red{
+  background: Red;
+}
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.project-tile{
+  text-align: center;
+}
+.tamanho{
+  width: 100%;
+}
+#navbar{
+  position: fixed;
+}
+#welcome-section{
+  background: #9933ff;
+  height: 100vh;
+}
+#projects{
+}
+#welcome-object{
+  display: grid;
+  text-align: center;
+}
+#contact-section{
+  background: #9933ff;
+  height: 100vh;
+}
+#contact-object{
+  display: grid;
+  text-align: center;
+}
+#profile-link{
+  margin: 0 40% 0 40%;
+}
+@media (max-height: 15cm) {
+    .tamanho{
+  width: 50%;
+  }
+  #profile-link{
+  margin: 0 20% 0 20%;
+  }
+  ul{
+    width: 80vw;
+  }
+}
+  </style>
+  <body style="background: Teal">
+    <nav id="navbar">
+      <ul style="color: #ccff33">
+        <li><a href="#contact-section">Contact</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#welcome-section">About</a></li>
+      </ul>
+    </nav>
+    <section id="welcome-section">
+      <div id="welcome-object">
+        <h1 style="padding-top: 45vh">Hey, I'm Tarcyzio</h1>
+        <h2 style="color: #ccff33">a web developer</h2>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 style="text-align: center; padding-top: 20vh; color: #1a1a00">There are some of my projects</h1>
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <div>
+              <a class="project-tile" href="https://codepen.io/tarcyzio/full/VwKgEMG"><img class="tamanho" src="https://cdn1.iconfinder.com/data/icons/dev-coding-1/100/Text_document_technical-512.png" alt="Documentation page">
+              Documentation page</a>
+            </div>
+            <div>
+            <a class="project-tile" href="https://codepen.io/tarcyzio/full/xxEMxWv"><img class="tamanho" src="https://cdn3.iconfinder.com/data/icons/search-engine-optimization-27/48/landing_page-512.png" alt="Landing Page">
+              Landing page</a>
+            </div>
+            <div>
+            <a class="project-tile" href="https://codepen.io/tarcyzio/full/PoqwPmZ"><img class="tamanho" src="https://library.kissclipart.com/20180829/jtw/kissclipart-icon-clipart-computer-icons-social-media-92c28f697f9986bd.png" alt="Survey Page">
+              Survey page</a>
+            </div>
+            <div>
+            <a class="project-tile" href="https://codepen.io/tarcyzio/full/PoqoXry"><img class="tamanho" src="https://cdn1.iconfinder.com/data/icons/resume-or-cv-line/32/certificate-512.png" alt="Tribute Page">
+              Tribute page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact-section">
+      <div id="contact-object">
+        <h1 style="padding-top: 45vh">Lets Work Together...</h1>
+        <a id="profile-link" href="https://github.com/tarcyzio/" target="_blank" >link to my profile</a>
+      </div>
+    </section>
+  </body>
+</html>
